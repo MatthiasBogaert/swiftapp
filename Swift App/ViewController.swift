@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by De Winter Laura on 14/05/18.
-//  Copyright © 2018 Comflow. All rights reserved.
+//  Copyright © 2018 Comflow. All rights reserved. :)
 //
 
 import UIKit
@@ -12,13 +12,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
-    var tapcount = 0;
-    
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
     @IBAction func buttonTapped(_ sender: Any) {
-        tapcount = tapcount + 1
-        if tapcount >= 10{
-            theLabel.text = "u heeft 10 keer gedrukt"
-        }
+        print(text1.text! + text2.text!)
+
     }
     @IBAction func TapperCool(_ sender: Any) {
         theLabel.text = "Buttons are cool"
